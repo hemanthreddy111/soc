@@ -1,0 +1,16 @@
+/* Change these colors to match your portfolio. Nothing else needs editing. */
+:root {
+  --bg: #050816;
+  --panel: #100d25;
+  --panel-2: #151030;
+  --line: #2a2450;
+  --text: #f3f3f3;
+  --muted: #aaa6c3;
+  --accent: #915eff;
+
+  --sev-critical: #ff4d6d;
+  --sev-high: #ff9f43;
+  --sev-medium: #f7d046;
+  --sev-low: #4cc9f0;
+  --ok: #3ddc97;
+}

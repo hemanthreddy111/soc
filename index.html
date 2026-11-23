@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOC Detection &amp; Response Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>SOC Detection &amp; Response</h1>
+      <p>Detection rules mapped to MITRE ATT&amp;CK, with one-click response actions.</p>
+    </div>
+    <div class="tools">
+      <button id="btn-replay" class="btn">Replay sample attack</button>
+      <label class="btn ghost">Load your logs (JSON)
+        <input id="file" type="file" accept=".json" hidden>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <p id="notice" class="notice" role="status"></p>
+    <section id="stats" class="stats"></section>
+    <section><h2>ATT&amp;CK coverage</h2><div id="mitre" class="matrix"></div></section>
+    <section class="split">
+      <div><h2>Alerts</h2><div id="alerts" class="alert-list"></div></div>
+      <div><h2>Investigation</h2><div id="detail" class="panel"></div></div>
+    </section>
+    <section><h2>Detection rules</h2><div id="rules" class="scroll-x"></div></section>
+  </main>
+
+  <footer>Built by HEMANTH. Sample data only, response actions are simulated.</footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
